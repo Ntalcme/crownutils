@@ -1,10 +1,12 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
+  <h1>Crownutils</h1>
   <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
+    The future implementation of
+    <a href="https://ntalcme.github.io/crowniclesUtils/" target="_blank" rel="noopener"
+      >crowniclesUtils</a
+    >
   </p>
 </template>
 
