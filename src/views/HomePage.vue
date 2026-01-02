@@ -1,18 +1,3 @@
-<script setup>
-import { ref, computed } from 'vue'
-import { toolsConfig } from '@/config/tools'
-import ToolCard from '@/components/ToolCard.vue'
-import '@/styles/HomePage.css'
-
-const search = ref('')
-
-const filteredTools = computed(() =>
-  toolsConfig.filter(tool =>
-    tool.title.toLowerCase().includes(search.value.toLowerCase())
-  )
-)
-</script>
-
 <template>
   <header class="home-header">
     <h1>Crownutils</h1>
@@ -27,3 +12,16 @@ const filteredTools = computed(() =>
   </main>
 </template>
 
+<script setup>
+import { ref, computed } from 'vue'
+import { toolsConfig } from '@/config/tools'
+import ToolCard from '@/components/ToolCard.vue'
+
+const search = ref('')
+
+const filteredTools = computed(() =>
+  toolsConfig.filter(tool =>
+    tool.title.toLowerCase().includes(search.value.toLowerCase())
+  )
+)
+</script>
