@@ -6,8 +6,10 @@
   </header>
 
   <main class="home-main">
-    <section class="tool-grid">
-      <ToolCard v-for="tool in filteredTools" :key="tool.id" :tool="tool"/>
+    <section class="grid-container">
+      <div v-for="tool in filteredTools" :key="tool.id" class="grid-item">
+        <ToolCard :tool="tool" />
+      </div>
     </section>
   </main>
 </template>
@@ -25,3 +27,6 @@ const filteredTools = computed(() =>
   )
 )
 </script>
+
+<style scoped>
+</style>

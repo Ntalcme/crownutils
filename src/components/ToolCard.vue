@@ -1,9 +1,9 @@
 <template>
-  <div class="tool-card">
+  <router-link :to="`/${tool.id}`">
     <h2>{{ tool.icon }} {{ tool.title }}</h2>
-    <span>{{ displayStatus(tool.status) }}</span>
+    <span class="status" :class="`status-${tool.status}`">{{ displayStatus(tool.status) }}</span>
     <p>{{ tool.description }}</p>
-  </div>
+  </router-link>
 </template>
 
 <script setup>
@@ -22,3 +22,6 @@ const statusMap = {
 const displayStatus = (status) => statusMap[status] || status
 
 </script>
+
+<style scoped>
+</style>
