@@ -9,18 +9,18 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomePage
+      component: HomePage,
     },
     {
       path: '/petExpedition',
       name: 'petExpedition',
-      component: PetExpeditionView
+      component: PetExpeditionView,
     },
     {
       path: '/leagueBonus',
       name: 'leagueBonus',
-      component: LeagueBonusView
-    }
+      component: LeagueBonusView,
+    },
   ],
 })
 
