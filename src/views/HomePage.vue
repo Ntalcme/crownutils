@@ -28,9 +28,21 @@ const filteredTools = computed(() =>
 
 <style scoped>
 .home-header {
-  margin: var(--space-8) auto;
+  margin-bottom: var(--space-8);
   padding: var(--space-8) var(--space-6);
   text-align: center;
+  background:
+    radial-gradient(circle at 25% 40%, rgba(185, 94, 75, 0.18), transparent 45%),
+    radial-gradient(circle at 75% 25%, rgba(210, 157, 69, 0.15), transparent 50%),
+    radial-gradient(ellipse at 50% 95%, rgba(185, 94, 75, 0.1), transparent 55%),
+    linear-gradient(
+      135deg,
+      rgba(40, 38, 58, 0.98) 0%,
+      var(--color-bg-primary) 40%,
+      rgba(44, 42, 62, 1) 70%,
+      rgba(40, 38, 58, 1) 100%
+    );
+  border-bottom: 4px solid var(--color-accent-2);
 }
 
 .home-title {
@@ -48,17 +60,17 @@ const filteredTools = computed(() =>
 }
 
 .home-search {
-  width: min(420px, 90%);
+  width: min(580px, 90%);
   padding: var(--space-3) var(--space-4);
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.06);
-  color: white;
+  background: rgba(255, 255, 255, 0.95);
+  color: black;
   outline: none;
 }
 
 .home-search::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .home-search:focus {
