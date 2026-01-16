@@ -1,3 +1,1 @@
-<template>
-  league
-</template>
+<template>league</template>
